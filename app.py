@@ -8,3 +8,8 @@ migrate=Migrate(app,db)
 db.init_app(app)
 
 
+@app.route('/')
+def index():
+    return "Testing"
+
+
